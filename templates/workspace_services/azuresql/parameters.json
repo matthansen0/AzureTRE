@@ -2,7 +2,7 @@
   "schemaType": "ParameterSet",
   "schemaVersion": "1.0.1",
   "namespace": "",
-  "name": "tre-shared-service-firewall",
+  "name": "tre-workspace-service-azuresql",
   "parameters": [
     {
       "name": "tre_id",
@@ -35,27 +35,27 @@
       }
     },
     {
-      "name": "rule_collections",
+      "name": "sql_sku",
       "source": {
-        "env": "RULE_COLLECTIONS"
+        "env": "SQL_SKU"
       }
     },
     {
-      "name": "network_rule_collections",
+      "name": "storage_gb",
       "source": {
-        "env": "NETWORK_RULE_COLLECTIONS"
+        "env": "STORAGE_GB"
       }
     },
     {
-      "name": "firewall_sku",
+      "name": "db_name",
       "source": {
-        "env": "FIREWALL_SKU"
+        "env": "DB_NAME"
       }
     },
     {
-      "name": "microsoft_graph_fqdn",
+      "name": "workspace_id",
       "source": {
-        "env": "MICROSOFT_GRAPH_FQDN"
+        "env": "WORKSPACE_ID"
       }
     },
     {

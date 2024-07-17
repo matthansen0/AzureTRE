@@ -167,6 +167,7 @@ module "resource_processor_vmss_porter" {
   resource_processor_vmss_sku                      = var.resource_processor_vmss_sku
   arm_environment                                  = var.arm_environment
   logging_level                                    = var.logging_level
+  firewall_sku                                     = var.firewall_sku
   rp_bundle_values                                 = var.rp_bundle_values
 
   depends_on = [
@@ -178,6 +179,6 @@ module "resource_processor_vmss_porter" {
 }
 
 module "terraform_azurerm_environment_configuration" {
-  source          = "git::https://github.com/microsoft/terraform-azurerm-environment-configuration.git?ref=0.2.0"
+  source          = "git::https://github.com/microsoft/terraform-azurerm-environment-configuration.git?ref=0.5.0"
   arm_environment = var.arm_environment
 }
